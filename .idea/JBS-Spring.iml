@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/class_source/.metadata" />
+      <excludeFolder url="file://$MODULE_DIR$/class_source/HTTPProject/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/class_source/JDBCProject/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/class_source/JDBCProject/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/class_source/PolymorphismProject/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/class_source/PolymorphismProject/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/class_source/Servers/.settings" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
