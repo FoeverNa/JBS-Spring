@@ -12,10 +12,12 @@ public class GetBoardListTest {
 		// getBoardList() 메소드가 리턴한 글 목록을 원하는 형태로 사용한다
 		List<BoardVO> boardList = boardDAO.getBoardList();
 		
-		/*
-		 * // 1. CASE System.out.println("[ BOARD LIST ]"); for (BoardVO board :
-		 * boardList) { System.out.println("---> " + board.toString()); }
-		 */
+		
+		  // 1. CASE 
+//		  System.out.println("[ BOARD LIST ]"); 
+//		  for (BoardVO board : boardList) {
+//			  System.out.println("---> " + board.toString()); }
+//		 
 		
 		// 2. CASE
 		System.out.println("검색된 게시글 수 : " + boardList.size());

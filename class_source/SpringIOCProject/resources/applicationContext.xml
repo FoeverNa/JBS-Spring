@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	                   http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+		
+
+	<!-- 컴퓨넌트 스캔 설정 -->
+	<context:component-scan base-package="polymorphism4"/>
+	
+	
+	<!--  실제로 사용할 Speaker 타입의 객체는 하나만 등록한다. -->
+	<bean class="polymorphism4.SonySpeaker"></bean>
+
+
+	<!-- 스프링 IoC 컨테이너가 생성할 객체를 bean 등록한다. -->
+	<!-- <bean name="tv" class="polymorphism4.GoogleTV" init-method="멤버변수초기화" 
+		destroy-method="자원해제" lazy-init="false" scope="prototype"></bean> -->
+
+	<!-- <import resource="other.xml"/> -->
+
+	<!-- <bean id="speaker" class="polymorphism4.AppleSpeaker"></bean> 
+	<bean id="tv" class="polymorphism4.SamsungTV"> 
+	<constructor-arg ref="speaker"/> 
+	<constructor-arg value="1500000"/> </bean> 
+		
+		
+	<bean id="tv" class="polymorphism4.SamsungTV">
+		<property name="speaker" ref="speaker"></property>
+		<property name="price" value="1700000"></property>
+	</bean>															
+
+	<bean id="speaker" class="polymorphism4.SonySpeaker"></bean>
+
+	<bean id="tv" class="polymorphism4.SamsungTV" p:speaker-ref="speaker" p:price="1100000"></bean>
+
+	-->
+
+
+
+</beans>
+
+
+
+
+
+
+
+
+
+
+

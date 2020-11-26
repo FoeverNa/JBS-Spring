@@ -19,7 +19,25 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="418d64fe-c121-4b37-9596-26e03e019e20" name="Default Changelist" comment="" />
+    <list default="true" id="418d64fe-c121-4b37-9596-26e03e019e20" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_note/day2.md" beforeDir="false" afterPath="$PROJECT_DIR$/class_note/day2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_source/HTTPProject/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/class_source/HTTPProject/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_source/HTTPProject/WebContent/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/class_source/HTTPProject/WebContent/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_source/HTTPProject/WebContent/hello.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_source/JDBCProject/src/com/rubypaper/biz/board/BoardDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/class_source/JDBCProject/src/com/rubypaper/biz/board/BoardDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_source/JDBCProject/src/com/rubypaper/biz/board/BoardVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/class_source/JDBCProject/src/com/rubypaper/biz/board/BoardVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_source/JDBCProject/src/com/rubypaper/biz/board/GetBoardListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/class_source/JDBCProject/src/com/rubypaper/biz/board/GetBoardListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_source/JDBCProject/src/com/rubypaper/biz/board/GetBoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/class_source/JDBCProject/src/com/rubypaper/biz/board/GetBoardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_source/JDBCProject/src/com/rubypaper/biz/user/GetUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/class_source/JDBCProject/src/com/rubypaper/biz/user/GetUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_source/Servers/Tomcat v8.5 Server at localhost-config/catalina.policy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_source/Servers/Tomcat v8.5 Server at localhost-config/catalina.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_source/Servers/Tomcat v8.5 Server at localhost-config/context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_source/Servers/Tomcat v8.5 Server at localhost-config/server.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_source/Servers/Tomcat v8.5 Server at localhost-config/tomcat-users.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_source/Servers/Tomcat v8.5 Server at localhost-config/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_source/Servers/Tomcat v9.0 Server at localhost-config/server.xml" beforeDir="false" afterPath="$PROJECT_DIR$/class_source/Servers/Tomcat v9.0 Server at localhost-config/server.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,23 +62,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TIL/TIL" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../(clone)JBS_SPRING/JSPProject" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -71,6 +79,9 @@
       <option name="presentableId" value="Default" />
       <updated>1605660463404</updated>
       <workItem from="1605660465302" duration="339000" />
+      <workItem from="1605663972179" duration="1526000" />
+      <workItem from="1605671296370" duration="23000" />
+      <workItem from="1606179401037" duration="32000" />
     </task>
     <task id="LOCAL-00001" summary="add class_note">
       <created>1605660580315</created>
@@ -86,7 +97,21 @@
       <option name="project" value="LOCAL" />
       <updated>1605660677087</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary=".gitignore">
+      <created>1605664081615</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605664081615</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add file after add .gitignore">
+      <created>1605664200939</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605664200939</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,20 +127,27 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add class_note" />
     <MESSAGE value="add class_source" />
-    <option name="LAST_COMMIT_MESSAGE" value="add class_source" />
+    <MESSAGE value=".gitignore" />
+    <MESSAGE value="Add file after add .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add file after add .gitignore" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="687" y="236" key="FileChooserDialogImpl" timestamp="1605660806126">
+    <state x="687" y="236" key="FileChooserDialogImpl" timestamp="1606179431809">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="687" y="236" key="FileChooserDialogImpl/0.0.1920.1080/4.1080.1920.1080@0.0.1920.1080" timestamp="1605660806126" />
-    <state x="452" y="184" key="Vcs.Push.Dialog.v2" timestamp="1605660682637">
+    <state x="687" y="236" key="FileChooserDialogImpl/0.0.1920.1080/4.1080.1920.1080@0.0.1920.1080" timestamp="1606179431809" />
+    <state x="452" y="184" key="Vcs.Push.Dialog.v2" timestamp="1605664223030">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="452" y="184" key="Vcs.Push.Dialog.v2/0.0.1920.1080/4.1080.1920.1080@0.0.1920.1080" timestamp="1605660682637" />
+    <state x="452" y="184" key="Vcs.Push.Dialog.v2/0.0.1920.1080/4.1080.1920.1080@0.0.1920.1080" timestamp="1605664223030" />
+    <state x="227" y="0" key="new project wizard" timestamp="1605671317669">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="227" y="0" key="new project wizard/0.0.1920.1080/4.1080.1920.1080@0.0.1920.1080" timestamp="1605671317669" />
   </component>
 </project>

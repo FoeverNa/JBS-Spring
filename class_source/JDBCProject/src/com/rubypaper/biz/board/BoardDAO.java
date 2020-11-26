@@ -17,11 +17,12 @@ public class BoardDAO {
 	private ResultSet rs;
 
 	// BOARD 테이블 관련 SQL 명령어
-	private static final String BOARD_INSERT = "insert into board(seq, title, writer, content)"
-			+ "values((select nvl(max(seq), 0) +1 from board), ?, ?, ?)";
-	private static final String BOARD_UPDATE = "UPDATE board set title =?, content = ? where seq=?";
-	private static final String BOARD_DELETE = "delete board where seq = ?";
-	private static final String BOARD_GET = "select * from board where seq = ? "
+	private static final String BOARD_INSERT    = "insert into board(seq, title, writer, content)"
+			                                       + "values((select nvl(max(seq), 0) +1 from board), ?, ?, ?)";
+	private static final String BOARD_UPDATE     = "UPDATE board set title =?, content = ? where seq=?";
+	private static final String BOARD_UPDATE_CNT = "UPDATE board set CNT=CNT+1 WHERE SEQ=?";
+	private static final String BOARD_DELETE     = "delete board where seq = ?";
+	private static final String BOARD_GET        = "select * from board where seq = ? "
 			+ "";
 	private static final String BOARD_LIST = "select * from board order by seq desc";
 
@@ -93,9 +94,13 @@ public class BoardDAO {
 				board.setContent(rs.getString("CONTENT"));
 				board.setRegDate(rs.getDate("REGDATE"));
 				board.setCnt(rs.getInt("CNT"));
+				
+				// 검색 결과가 존재하는 경우 조회수를 증가시킨다.
+				stmt = conn.prepareStatement(BOARD_UPDATE_CNT);
+				stmt.setInt(1, vo.getSeq());
+				stmt.executeUpdate();
 			}
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} finally {
 			JDBCUtil.close(rs, stmt, conn);

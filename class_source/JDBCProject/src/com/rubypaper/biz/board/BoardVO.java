@@ -22,6 +22,7 @@ public class BoardVO {
 	private int cnt;
 	
 	
+	
 	// private 멤버 변수에 접근하는 public Getter/Setter 메소드를 작성 한다.
 	// 단축 키 (Alt + Shift + s)를 이용 한다
 	

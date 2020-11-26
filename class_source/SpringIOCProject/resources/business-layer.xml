@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	                   http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+	                   http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+		
+	<!-- <bean id="boardDAO" class="com.rubypaper.biz.board.BoardDAO"></bean> -->
+ 	
+	<!-- <bean id="boardService" class="com.rubypaper.biz.board.BoardServiceImpl">
+		<property name="boardDAO"  ref="boardDAO"></property>
+	</bean> -->
+	
+	<!--  컴포넌트 스캔 설정 -->
+	<context:component-scan base-package="com.rubypaper.biz"></context:component-scan> 
+	
+	<!-- 횡단관심에 해당하는 공통 클래스를 bean 등록한다.-->
+	<bean id="log" class="com.rubypaper.biz.common.LogAdvice"></bean>
+
+	<!--  AOP 설정 -->
+	<aop:config>
+		<aop:pointcut id="allPointcut"
+					 expression="execution(* com.rubypaper.biz..*Impl.*(..))" />
+		<aop:aspect ref="log">
+			<aop:before pointcut-ref="allPointcut" method="printLog"></aop:before>
+		</aop:aspect>
+	</aop:config>
+	
+</beans>
+
+
+
+
+
+
+
+
+
+
+

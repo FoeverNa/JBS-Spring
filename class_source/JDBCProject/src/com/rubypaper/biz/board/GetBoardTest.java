@@ -7,7 +7,7 @@ public class GetBoardTest {
 		//1. 글 상세조회 기능 처리
 		BoardDAO boardDAO = new BoardDAO();
 		BoardVO vo = new BoardVO();
-		vo.setSeq(3);
+		vo.setSeq(1);
 		BoardVO board = boardDAO.getBoard(vo);
 		
 		System.out.println(board.getSeq() + "번 게시 글의 상세 정보");
