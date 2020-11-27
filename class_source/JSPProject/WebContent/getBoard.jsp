@@ -18,7 +18,7 @@
 	BoardDAO boardDAO = new BoardDAO();
 	BoardVO board = boardDAO.getBoard(vo);
 	
-	// 3. 응답 화면 구성	
+	// 3. 응답 화면 구성
 %>
 
 <!DOCTYPE html PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN' 'http://www.w3.org/TR/html4/loose.dtd'>

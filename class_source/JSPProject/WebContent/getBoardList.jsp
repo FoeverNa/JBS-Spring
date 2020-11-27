@@ -5,32 +5,32 @@
 <%@page contentType="text/html; charset=EUC-KR"%>
     
 <%
-	// 0. 세선에 등록된 정보 꺼내기
-	
-	UserVO user = (UserVO) session.getAttribute("user");
+    	// 0. 세선에 등록된 정보 꺼내기
+        	
+        	UserVO user = (UserVO) session.getAttribute("user");
 
 
-	// 1. 사용자 입력정보 추출
-	//		request.setCharacterEncoding("EUC-KR");
-	String searchCondition = request.getParameter("serachCondition");
-	String searchKeyword = request.getParameter("searchKeyword");
-	
-	// Null check
-	if (searchCondition == null)
-		searchCondition = "TITLE";
-	if (searchKeyword == null)
-		searchKeyword = "";
-	
-	// 2. DB 연동 처리
-	BoardVO vo = new BoardVO();
-	vo.setSerachCondition(searchCondition);
-	vo.setSerchKeyword(searchKeyword);
-	
-	BoardDAO boardDAO = new BoardDAO();
-	List<BoardVO> boardList = boardDAO.getBoardList(vo);
+        	// 1. 사용자 입력정보 추출
+        	//		request.setCharacterEncoding("EUC-KR");
+        	String searchCondition = request.getParameter("serachCondition");
+        	String searchKeyword = request.getParameter("searchKeyword");
+        	
+        	// Null check
+        	if (searchCondition == null)
+        		searchCondition = "TITLE";
+        	if (searchKeyword == null)
+        		searchKeyword = "";
+        	
+        	// 2. DB 연동 처리
+        	BoardVO vo = new BoardVO();
+        	vo.setSerachCondition(searchCondition);
+        	vo.setSerchKeyword(searchKeyword);
+        	
+        	BoardDAO boardDAO = new BoardDAO();
+        	List<BoardVO> boardList = boardDAO.getBoardList(vo);
 
-// 3. 응답 화면 구성
-%>
+        // 3. 응답 화면 구성
+    %>
     
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 

@@ -26,7 +26,7 @@ public class BoardServiceImpl implements BoardService {
 //		if(vo.getSeq() ==0) {
 //			throw new IllegalArgumentException();
 //		}
-//		boardDAO.insertBoard(vo);
+		boardDAO.insertBoard(vo);
 
 	}
 
