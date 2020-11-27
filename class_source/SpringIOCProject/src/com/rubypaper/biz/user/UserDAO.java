@@ -11,6 +11,7 @@ import com.rubypaper.biz.common.JDBCUtil;
 // DAO(Data Access Object) 클래스
 @Repository
 public class UserDAO {
+
 	// JDBC 관련 변수 선언
 	private Connection conn;
 	private PreparedStatement stmt;

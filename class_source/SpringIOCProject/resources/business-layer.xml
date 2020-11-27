@@ -17,17 +17,36 @@
 	<!--  컴포넌트 스캔 설정 -->
 	<context:component-scan base-package="com.rubypaper.biz"></context:component-scan> 
 	
+	<!-- Annotation 기반의 AOP 설정 -->
+	<aop:aspectj-autoproxy/>
+	
 	<!-- 횡단관심에 해당하는 공통 클래스를 bean 등록한다.-->
-	<bean id="log" class="com.rubypaper.biz.common.LogAdvice"></bean>
-
+<!-- 	<bean id="log" class="com.rubypaper.biz.common.LogAdvice"></bean>
+	<bean id="afterReturning" class="com.rubypaper.biz.common.AfterReturningAdvice"></bean>
+	<bean id="afterThrowing" class="com.rubypaper.biz.common.AfterThrowingAdvice"></bean>
+ -->
+ 
+ 
 	<!--  AOP 설정 -->
-	<aop:config>
-		<aop:pointcut id="allPointcut"
-					 expression="execution(* com.rubypaper.biz..*Impl.*(..))" />
+<!-- 	<aop:config>
+		<aop:pointcut id="allPointcut" expression="execution(* com.rubypaper.biz..*Impl.*(..))" />
+		<aop:pointcut id="getPointcut" expression="execution(* com.rubypaper.biz..*Impl.get*(..))" />
 		<aop:aspect ref="log">
 			<aop:before pointcut-ref="allPointcut" method="printLog"></aop:before>
 		</aop:aspect>
-	</aop:config>
+		
+		<aop:aspect ref="afterReturning">
+			<aop:after-returning pointcut-ref="getPointcut" method="afterLog" returning="returnObj"/>
+		</aop:aspect>
+		
+		<aop:aspect ref="afterThrowing">
+			<aop:after-throwing pointcut-ref="allPointcut" method="exceptionLog" throwing="exceptionObj"/>
+		</aop:aspect>
+		
+		<aop:aspect ref="around">
+			<aop:around pointcut-ref="allPointcut" method="aroundLog"/>		
+		</aop:aspect>
+	</aop:config> -->
 	
 </beans>
 

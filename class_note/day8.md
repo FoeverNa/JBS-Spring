@@ -30,7 +30,7 @@
   - Annotation
     - name space를 추가한다는 것은 다른종류의 명령어를 사용할 수 있다는것
     - context:component-scan base-package="패키지명"> 패키지명에 있는것을 컴포넌트로 스캔해라
-      - 이제 componnent 어노테이션만 사용하면된다
+      - 이제 componnent 어노테이션만 사용하면된다`
       - ()열면 id를 등록할 수 있다
     - type injection:Autowired
 
@@ -43,6 +43,7 @@
 
 - AppleSpeak를 SonySpeaker로 바꾸어주고 실행하면 예외 발생한다.
   - autowired에 찾는 타입이 없어서
+  - **인텔리제이에서는 빨간줄을 그어주네**
 - sonySpeaker에 @component("sony")하면 해결된다
   - 아니면 componnet지우고 bean등록을 해주어도된다
   - bean등록하면 xml수정해야되서 불편하다

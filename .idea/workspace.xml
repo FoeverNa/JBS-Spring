@@ -21,22 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="418d64fe-c121-4b37-9596-26e03e019e20" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/class_note/day2.md" beforeDir="false" afterPath="$PROJECT_DIR$/class_note/day2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/class_source/HTTPProject/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/class_source/HTTPProject/.classpath" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/class_source/HTTPProject/WebContent/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/class_source/HTTPProject/WebContent/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/class_source/HTTPProject/WebContent/hello.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/class_source/JDBCProject/src/com/rubypaper/biz/board/BoardDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/class_source/JDBCProject/src/com/rubypaper/biz/board/BoardDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/class_source/JDBCProject/src/com/rubypaper/biz/board/BoardVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/class_source/JDBCProject/src/com/rubypaper/biz/board/BoardVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/class_source/JDBCProject/src/com/rubypaper/biz/board/GetBoardListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/class_source/JDBCProject/src/com/rubypaper/biz/board/GetBoardListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/class_source/JDBCProject/src/com/rubypaper/biz/board/GetBoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/class_source/JDBCProject/src/com/rubypaper/biz/board/GetBoardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/class_source/JDBCProject/src/com/rubypaper/biz/user/GetUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/class_source/JDBCProject/src/com/rubypaper/biz/user/GetUserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/class_source/Servers/Tomcat v8.5 Server at localhost-config/catalina.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/class_source/Servers/Tomcat v8.5 Server at localhost-config/catalina.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/class_source/Servers/Tomcat v8.5 Server at localhost-config/context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/class_source/Servers/Tomcat v8.5 Server at localhost-config/server.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/class_source/Servers/Tomcat v8.5 Server at localhost-config/tomcat-users.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/class_source/Servers/Tomcat v8.5 Server at localhost-config/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/class_source/Servers/Tomcat v9.0 Server at localhost-config/server.xml" beforeDir="false" afterPath="$PROJECT_DIR$/class_source/Servers/Tomcat v9.0 Server at localhost-config/server.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +46,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../(clone)JBS_SPRING/JSPProject" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../(clone)JBS_SPRING/SpringIOCProject2" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -82,6 +66,8 @@
       <workItem from="1605663972179" duration="1526000" />
       <workItem from="1605671296370" duration="23000" />
       <workItem from="1606179401037" duration="32000" />
+      <workItem from="1606355142384" duration="134000" />
+      <workItem from="1606355351773" duration="83000" />
     </task>
     <task id="LOCAL-00001" summary="add class_note">
       <created>1605660580315</created>
@@ -111,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605664200939</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="JBS-Spring">
+      <created>1606355256065</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606355256065</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,17 +127,18 @@
     <MESSAGE value="add class_source" />
     <MESSAGE value=".gitignore" />
     <MESSAGE value="Add file after add .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add file after add .gitignore" />
+    <MESSAGE value="JBS-Spring" />
+    <option name="LAST_COMMIT_MESSAGE" value="JBS-Spring" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="687" y="236" key="FileChooserDialogImpl" timestamp="1606179431809">
+    <state x="687" y="236" key="FileChooserDialogImpl" timestamp="1606355433504">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="687" y="236" key="FileChooserDialogImpl/0.0.1920.1080/4.1080.1920.1080@0.0.1920.1080" timestamp="1606179431809" />
-    <state x="452" y="184" key="Vcs.Push.Dialog.v2" timestamp="1605664223030">
+    <state x="687" y="236" key="FileChooserDialogImpl/0.0.1920.1080/4.1080.1920.1080@0.0.1920.1080" timestamp="1606355433504" />
+    <state x="452" y="184" key="Vcs.Push.Dialog.v2" timestamp="1606355262885">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="452" y="184" key="Vcs.Push.Dialog.v2/0.0.1920.1080/4.1080.1920.1080@0.0.1920.1080" timestamp="1605664223030" />
+    <state x="452" y="184" key="Vcs.Push.Dialog.v2/0.0.1920.1080/4.1080.1920.1080@0.0.1920.1080" timestamp="1606355262885" />
     <state x="227" y="0" key="new project wizard" timestamp="1605671317669">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

@@ -11,11 +11,13 @@ public class UserServiceImpl implements UserService {
 	
 	@Override
 	public void insertUser(UserVO vo) {
+		System.out.println("===> JDBC 기반으로 insertUser() 기능 처리");
 		userDAO.insertUser(vo);
 	}
 
 	@Override
 	public UserVO getUser(UserVO vo) {
+		System.out.println("===> JDBC 기반으로 getUser() 기능 처리");
 		return userDAO.getUser(vo);
 	}
 

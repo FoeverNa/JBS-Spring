@@ -17,6 +17,7 @@ public class BoardServiceClient {
 		}
 		
 		BoardVO vo = new BoardVO();
+//		vo.setSeq(11);
 		vo.setTitle("Spring 제목");
 		vo.setWriter("테스터");
 		vo.setContent("Spring 내용...");
