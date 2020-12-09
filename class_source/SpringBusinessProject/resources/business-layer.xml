@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	                   http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+	                   http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+		
+	<!-- <bean id="boardDAO" class="com.rubypaper.biz.board.BoardDAO"></bean> -->
+ 	
+	<!-- <bean id="boardService" class="com.rubypaper.biz.board.BoardServiceImpl">
+		<property name="boardDAO"  ref="boardDAO"></property>
+	</bean> -->
+	
+	<!--  컴포넌트 스캔 설정 -->
+	<context:component-scan base-package="com.rubypaper.biz"/> 
+	
+	<!--  DAO는 실제로 사용할 클래스 하나만 등록한다. -->
+	<bean class="com.rubypaper.biz.board.BoardDAOSpring"></bean>
+	<bean class="com.rubypaper.biz.user.UserDAOSpring"></bean>
+	
+	<!-- Annotation 기반의 AOP 설정 -->
+	<aop:aspectj-autoproxy/>
+	
+	<!--  DataSource 설정 -->
+	<bean id="dataSource" 
+	class="org.apache.commons.dbcp.BasicDataSource"
+	destroy-method="close">
+		<property name="driverClassName" value="org.h2.Driver"/>
+		<property name="url" value="jdbc:h2:tcp://localhost/~/test"/>
+		<property name="username" value="sa"/>
+		<property name="password" value=""/>
+	</bean>
+	
+	<!-- Spring JDBC 설정 -->
+	<bean class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	
+	<!-- 횡단관심에 해당하는 공통 클래스를 bean 등록한다.-->
+<!-- 	<bean id="log" class="com.rubypaper.biz.common.LogAdvice"></bean>
+	<bean id="afterReturning" class="com.rubypaper.biz.common.AfterReturningAdvice"></bean>
+	<bean id="afterThrowing" class="com.rubypaper.biz.common.AfterThrowingAdvice"></bean>
+ -->
+ 
+ 
+	<!--  AOP 설정 -->
+<!-- 	<aop:config>
+		<aop:pointcut id="allPointcut" expression="execution(* com.rubypaper.biz..*Impl.*(..))" />
+		<aop:pointcut id="getPointcut" expression="execution(* com.rubypaper.biz..*Impl.get*(..))" />
+		<aop:aspect ref="log">
+			<aop:before pointcut-ref="allPointcut" method="printLog"></aop:before>
+		</aop:aspect>
+		
+		<aop:aspect ref="afterReturning">
+			<aop:after-returning pointcut-ref="getPointcut" method="afterLog" returning="returnObj"/>
+		</aop:aspect>
+		
+		<aop:aspect ref="afterThrowing">
+			<aop:after-throwing pointcut-ref="allPointcut" method="exceptionLog" throwing="exceptionObj"/>
+		</aop:aspect>
+		
+		<aop:aspect ref="around">
+			<aop:around pointcut-ref="allPointcut" method="aroundLog"/>		
+		</aop:aspect>
+	</aop:config> -->
+	
+</beans>
+
+
+
+
+
+
+
+
+
+
+

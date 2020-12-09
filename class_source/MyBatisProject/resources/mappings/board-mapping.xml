@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="BoardDAO"> 
+
+		<resultMap type="board" id="boardResult">
+			<id property="seq" column="SEQ" />
+			<result property="title" column="TITLE" />
+			<result property="writer" column="WRITER" />
+			<result property="content" column="CONTENT" />
+			<result property="regDate" column="REGDATE" />
+			<result property="cnt" column="CNT" />
+		</resultMap>
+		
+		<insert id="insertBoard" >
+		INSERT INTO BOARD(SEQ, TITLE, WRITER, CONTENT)
+		VALUES((SELECT NVL(MAX(SEQ), 0) + 1 FROM BOARD),
+		#{title},
+		#{writer},
+		#{content});
+		</insert>
+		
+		<insert id="insertBoardMap" parameterType="java.util.Map" >
+		INSERT INTO BOARD(SEQ, TITLE, WRITER, CONTENT)
+		VALUES((SELECT NVL(MAX(SEQ), 0) + 1 FROM BOARD),
+		#{title},
+		#{writer},
+		#{content});
+		</insert>
+		
+		<update id="updateBoard" >
+		UPDATE BOARD 
+		SET 
+		TITLE=#{title}, 
+		CONTENT=#{content} 
+		WHERE SEQ=#{seq}
+		</update>
+		
+		<delete id="deleteBoard" >
+		DELETE BOARD 
+		WHERE SEQ=#{seq}
+		</delete>
+		
+		<select id="getBoard"  resultType="board">
+			<![CDATA[	
+		SELECT * 
+		FROM BOARD 
+		WHERE SEQ =# [seq]]]>
+			
+		</select>
+		
+		<select id="getBoardList" resultMap="boardResult">
+		SELECT * 
+		FROM BOARD 
+		ORDER BY SEQ DESC
+		</select>
+		
+		<select id="getBoardListMap" resultType="java.util.Map">
+		SELECT * 
+		FROM BOARD 
+		ORDER BY SEQ DESC
+		</select>
+		
+		<select id="getTotalCount"  resultType="int">
+		<![CDATA[	
+		SELECT count(*) 
+		FROM BOARD 
+		]]>
+			
+		</select>
+		
+</mapper>

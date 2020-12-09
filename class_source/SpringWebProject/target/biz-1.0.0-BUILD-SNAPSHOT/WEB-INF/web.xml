@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>SpringPresentationProject</display-name>
+  <welcome-file-list>
+    <welcome-file>/WEB-INF/views/index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <error-page>
+  	<error-code>404</error-code>
+  	<location>/WEB-INF/views/common/error404.jsp</location>
+  </error-page>
+  
+  <filter>
+    <filter-name>encodingFilter</filter-name>
+    <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+    <init-param>
+      <param-name>encoding</param-name>
+      <param-value>EUC-KR</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>encodingFilter</filter-name>
+    <url-pattern>*.do</url-pattern>
+  </filter-mapping>
+  
+  <!-- 스프링 프레임워크에서 제공하는 ContextLoaderListener 클래스를 등록한다.(Pre-Loading) -->
+  <context-param>
+  	<param-name>contextConfigLocation</param-name>
+  	<param-value>/WEB-INF/spring/business-*.xml</param-value>
+  </context-param>
+  
+  <listener>
+  	<listener-class>
+  		org.springframework.web.context.ContextLoaderListener
+  	</listener-class>
+  </listener>
+  
+ <!--  스프링 프레임워크에서 제공하는 DispatcherServlet 클래스로 변경한다 -->
+  <servlet>
+    <servlet-name>action</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <!-- Local Parameter는 서블릿의 init() 메소드에서 ServletConfig를 통해 추출할 수 있다. -->
+    <init-param>
+    	<param-name>contextConfigLocation</param-name>
+    	<param-value>/WEB-INF/spring/appServlet/presentation-layer.xml</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>action</servlet-name>
+    <url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <display-name>roleCheckFilter</display-name>
+    <filter-name>roleCheckFilter</filter-name>
+    <filter-class>com.rubypaper.web.common.RoleCheckFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>roleCheckFilter</filter-name>
+    <url-pattern>*.do</url-pattern>
+  </filter-mapping>
+</web-app>
