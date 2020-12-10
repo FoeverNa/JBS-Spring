@@ -20,7 +20,7 @@
 			<property name="hibernate.format_sql" value="true" /> <!-- 포멧을 설정안하면 sql이 한줄로 보인다  -->
 			<property name="hibernate.use_sql_comments" value="false" /> <!-- 얘는 있어도되고 업성도되고  -->
 			<property name="hibernate.id.new_generator_mappings" value="true" /> 
-			<property name="hibernate.hbm2ddl.auto" value="update" /> <!-- application이 실행될때마다 table을 drop하고 다시만듬  -->
+			<property name="hibernate.hbm2ddl.auto" value="create" /> <!-- application이 실행될때마다 table을 drop하고 다시만듬  -->
 																		<!-- update로 하면 있으면 그냥쓰고 없을때만 만든다  -->
 		</properties>
 	</persistence-unit>

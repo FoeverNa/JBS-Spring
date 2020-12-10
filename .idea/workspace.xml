@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="418d64fe-c121-4b37-9596-26e03e019e20" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="418d64fe-c121-4b37-9596-26e03e019e20" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,6 +68,7 @@
       <workItem from="1606355351773" duration="83000" />
       <workItem from="1606436622502" duration="664000" />
       <workItem from="1606456077933" duration="848000" />
+      <workItem from="1607475499263" duration="340000" />
     </task>
     <task id="LOCAL-00001" summary="add class_note">
       <created>1605660580315</created>
@@ -120,7 +119,21 @@
       <option name="project" value="LOCAL" />
       <updated>1606456159998</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="JBS-Spring">
+      <created>1607475574083</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1607475574083</updated>
+    </task>
+    <task id="LOCAL-00009" summary="JBS-Spring">
+      <created>1607475595645</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1607475595645</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,19 +156,20 @@
     <MESSAGE value="add class_source" />
     <MESSAGE value=".gitignore" />
     <MESSAGE value="Add file after add .gitignore" />
-    <MESSAGE value="JBS-Spring" />
     <MESSAGE value="update class day9 sources" />
     <MESSAGE value="update day9 class sources" />
-    <option name="LAST_COMMIT_MESSAGE" value="update day9 class sources" />
+    <MESSAGE value="JBS-Spring" />
+    <option name="LAST_COMMIT_MESSAGE" value="JBS-Spring" />
   </component>
   <component name="WindowStateProjectService">
     <state x="687" y="236" key="FileChooserDialogImpl" timestamp="1606456108248">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="687" y="236" key="FileChooserDialogImpl/0.0.1920.1080/4.1080.1920.1080@0.0.1920.1080" timestamp="1606456108248" />
-    <state x="452" y="184" key="Vcs.Push.Dialog.v2" timestamp="1606456162199">
+    <state x="452" y="184" key="Vcs.Push.Dialog.v2" timestamp="1607475596882">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="452" y="184" key="Vcs.Push.Dialog.v2/0.0.1920.1080/0.1080.1920.1080@0.0.1920.1080" timestamp="1607475596882" />
     <state x="452" y="184" key="Vcs.Push.Dialog.v2/0.0.1920.1080/4.1080.1920.1080@0.0.1920.1080" timestamp="1606456162199" />
     <state x="227" y="0" key="new project wizard" timestamp="1605671317669">
       <screen x="0" y="0" width="1920" height="1080" />
