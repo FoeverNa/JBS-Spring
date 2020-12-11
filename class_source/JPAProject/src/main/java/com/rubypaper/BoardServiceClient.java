@@ -33,13 +33,18 @@ public class BoardServiceClient {
 //			board.setCreateDate(new Date());
 //			board.setCnt(0L);
 			
+			em.persist(board);
+			board.setTitle("수정된 제목=====");
+			tx1.commit();
+			
 			// 글등록 처리
 			
-			em.persist(board); // find할때 등록하지 않고 가져오는 것위해 주석처리했음
-			Board findBoard1 = em.find(Board.class, 1L); // 이때 select를 한다
-			Board findBoard2 = em.find(Board.class, 1L); // find1과 똑같다
-			System.out.println(findBoard1.toString()); // 왜 insert보다 먼저 프린트될까? commit안됬기 대문에
-			tx1.commit(); // 정상작동 하면 commit 한다 //이때 insert된다
+//			em.persist(board); // find할때 등록하지 않고 가져오는 것위해 주석처리했음
+//			Board findBoard1 = em.find(Board.class, 1L); // 이때 select를 한다
+//			Board findBoard2 = em.find(Board.class, 1L); // find1과 똑같다
+//			System.out.println(findBoard1.toString()); // 왜 insert보다 먼저 프린트될까? commit안됬기 대문에
+//			System.out.println(findBoard.toString());
+//			tx1.commit(); // 정상작동 하면 commit 한다 //이때 insert된다
 			
 //			EntityTransaction tx2 = em.getTransaction();
 			

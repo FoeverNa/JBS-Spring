@@ -19,7 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="418d64fe-c121-4b37-9596-26e03e019e20" name="Default Changelist" comment="" />
+    <list default="true" id="418d64fe-c121-4b37-9596-26e03e019e20" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_note/day17.md" beforeDir="false" afterPath="$PROJECT_DIR$/class_note/day17.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_source/JPAProject/src/main/java/com/rubypaper/BoardServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/class_source/JPAProject/src/main/java/com/rubypaper/BoardServiceClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_source/JPAProject/target/classes/META-INF/maven/com.ruby/JpaProject/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/class_source/JPAProject/target/classes/META-INF/maven/com.ruby/JpaProject/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_source/SpringBootProject02/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/class_source/SpringBootProject02/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,6 +75,7 @@
       <workItem from="1606436622502" duration="664000" />
       <workItem from="1606456077933" duration="848000" />
       <workItem from="1607475499263" duration="340000" />
+      <workItem from="1607563583056" duration="1239000" />
     </task>
     <task id="LOCAL-00001" summary="add class_note">
       <created>1605660580315</created>
@@ -133,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607475595645</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add day17">
+      <created>1607563606897</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1607563606898</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,17 +173,18 @@
     <MESSAGE value="update class day9 sources" />
     <MESSAGE value="update day9 class sources" />
     <MESSAGE value="JBS-Spring" />
-    <option name="LAST_COMMIT_MESSAGE" value="JBS-Spring" />
+    <MESSAGE value="add day17" />
+    <option name="LAST_COMMIT_MESSAGE" value="add day17" />
   </component>
   <component name="WindowStateProjectService">
     <state x="687" y="236" key="FileChooserDialogImpl" timestamp="1606456108248">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="687" y="236" key="FileChooserDialogImpl/0.0.1920.1080/4.1080.1920.1080@0.0.1920.1080" timestamp="1606456108248" />
-    <state x="452" y="184" key="Vcs.Push.Dialog.v2" timestamp="1607475596882">
+    <state x="452" y="184" key="Vcs.Push.Dialog.v2" timestamp="1607563608414">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="452" y="184" key="Vcs.Push.Dialog.v2/0.0.1920.1080/0.1080.1920.1080@0.0.1920.1080" timestamp="1607475596882" />
+    <state x="452" y="184" key="Vcs.Push.Dialog.v2/0.0.1920.1080/0.1080.1920.1080@0.0.1920.1080" timestamp="1607563608414" />
     <state x="452" y="184" key="Vcs.Push.Dialog.v2/0.0.1920.1080/4.1080.1920.1080@0.0.1920.1080" timestamp="1606456162199" />
     <state x="227" y="0" key="new project wizard" timestamp="1605671317669">
       <screen x="0" y="0" width="1920" height="1080" />

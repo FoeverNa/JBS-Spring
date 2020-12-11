@@ -128,7 +128,10 @@ JPA컨테이너는 복잡해서 잘이해해야 한다
   - 경우에 수가 너무 많기 때문에 그냥한다
   - 이때 똑같은 쿼리문을 사용하면 더 빠르게 사용할 수 있어서 성능에 도움이 된다
     - PreaprdStatement 사용하는게 sTatemnet보다 빠른이유
+
     - ?로채워서 미리 띄워놓기 때문에 훨씬빠르다
+
+      
 - 트랜잭션 시작
   - find해서 memberA를 찾음
     - 있다면 1차캐쉬 반환, 없으면 slect해서 1차캐쉬 채워서 반환
@@ -136,15 +139,16 @@ JPA컨테이너는 복잡해서 잘이해해야 한다
     - tx.종료되어있을때 1차캐쉬에 상태를 보고 update를 하는 것이다
 - 마지막으로 **스냅샷**이 등장
   - 1차캐쉬 오른쪽에 스냅샷이 존재한다(스냅샷은 사진이다)
-  - 스냅샷에 객체가 들어올때 컨테이너가 스냅샷찍듯 복제해서 스냅샷에 저장한다
-    - 똑같은 상태에 객체가 메롬리에 2개떠잇는것
+  - 1차캐쉬에 객체가 들어올때 컨테이너가 스냅샷찍듯 복제해서 스냅샷에 저장한다
+    - 똑같은 상태에 객체가 메모리에 2개떠잇는것
   - 그다음에 1차캐시에 있는 entity를 고치고 commit 하는 순간 컨테이너가 1차캐쉬에 객체와 스냅샷을 비교한다
     - 고친 객체는 두객체를 비교해서 같은 값은 그대로 복사하고 다른값만 update SQL 만든다
       - 업데이트된 상태에 스냅샷으로 객체가 교체된다
       - 그리고 다른 SQL문과 함께 같이 flush되고 commit된다
     - 안고친 객체는 update에서 제외시킨다
-- 스냅샷은 등록삭제오 ㅏ상관없이 수정할때만 의미가 있다
+- 스냅샷은 등록삭제와는 상관없이 수정할때만 의미가 있다
 - 엔티티 수정에서는 모든 필드 수정이다
+  
   - 그래야 preaparestatement생성한것 처럼 항상 동일한 객체를 보낼수 있다
 - 삭제는 sql문이 쌓여서 flush될때 될것이다
 
@@ -180,7 +184,8 @@ spring.jpa.show-sql=true
 spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
 spring.jpa.properties.hibernate.format_sql=true
 
-## JPA Logging Setting 
+## JPA Logging Setting
+
 logging.level.org.hibernate=info
 
 ==> 프로프터 ㅣ설정 쉽게할수있게 해준다
@@ -215,6 +220,7 @@ public interface BoardRepository extends CrudRepository<Board, Long>{ 엔티티�
   - 리턴을 List를 Page로만 바꿔주면된다
 
 - 정리
+  
   - ppt에 쿼리 메소드 유형이 있다
 
 

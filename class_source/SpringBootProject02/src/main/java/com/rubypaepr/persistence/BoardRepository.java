@@ -23,11 +23,11 @@ public interface BoardRepository extends CrudRepository<Board, Long>{
 //	// JPQL은 검색 대상이 테이블이 아니라 영속 상태에 있는 엔티티 객체들이다.
 //	// 그리고 컬럼명이 사용되는 것이 아니라 엔티티 객체의 변수가 사용된다. (SELECT, WHERE, ORDER BY, GROUP BY)
 ////	@Query("SELECT b FROM Board AS b WHERE b.title like %?1% ORDER BY b.seq DESC") // ?1 위치기반 
-//	@Query("SELECT b FROM Board AS b WHERE b.title like %:keyword ORDER BY b.seq DESC") // 이름기반으로 파람설정
+//	@Query("SELECT b FROM Board AS b WHERE b.title like %:keyword% ORDER BY b.seq DESC") // 이름기반으로 파람설정
 //	List<Board> queryAnnotationTest1(@Param("keyword") String keyword);
+//
 //	
-//	// 보충할 것
-//	@Query("SELECT b.seq, b.title, b.writer, b.createDate FROM Board AS b WHERE b.title like %:keyword ORDER BY b.seq DESC") // 이름기반으로 파람설정
+//	@Query("SELECT b.seq, b.title, b.writer, b.createDate FROM Board AS b WHERE b.title like %:keyword% ORDER BY b.seq DESC")
 //	List<Object[]> queryAnnotationTest2(@Param("keyword") String keyword);
 //	
 //	// 페이징
